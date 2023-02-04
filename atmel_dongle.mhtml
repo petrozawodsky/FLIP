@@ -1,0 +1,3528 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://creativetechguy.com/utilities/codedetector
+Subject: Code Detector & Formatter
+Date: Wed, 1 Feb 2023 20:30:24 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--mohUbYVUZKbRl5HfOYtD1cBXLG8QzBbuzjxRhJQqaV----"
+
+
+------MultipartBoundary--mohUbYVUZKbRl5HfOYtD1cBXLG8QzBbuzjxRhJQqaV----
+Content-Type: text/html
+Content-ID: <frame-A0EF957F1B80B80C5F854BFA41F59344@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://creativetechguy.com/utilities/codedetector
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-3c3bba5a-fbfe-478b-837a-1e8196451d38@mhtml.blink" />
+=09
+	<meta name=3D"keywords" content=3D"programming, language, detector, identi=
+fier, highlighter, syntax, code, ctg, Creative Tech Guy, Jason O'Neill">
+	<meta name=3D"description" content=3D"Automatically detect a programming l=
+anguage by pasting a snippet of code.">
+	<meta name=3D"author" content=3D"Jason O'Neill">
+	<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1=
+.0">
+
+	<title>Code Detector &amp; Formatter</title>
+
+	<link rel=3D"apple-touch-icon" sizes=3D"180x180" href=3D"https://creativet=
+echguy.com/apple-touch-icon.png">
+	<link rel=3D"icon" type=3D"image/png" sizes=3D"32x32" href=3D"https://crea=
+tivetechguy.com/favicon-32x32.png">
+	<link rel=3D"icon" type=3D"image/png" sizes=3D"16x16" href=3D"https://crea=
+tivetechguy.com/favicon-16x16.png">
+	<link rel=3D"manifest" href=3D"https://creativetechguy.com/manifest.json">
+	<link rel=3D"mask-icon" href=3D"https://creativetechguy.com/safari-pinned-=
+tab.svg" color=3D"#5bbad5">
+	<link rel=3D"shortcut icon" href=3D"https://creativetechguy.com/favicon.ic=
+o">
+	<meta name=3D"apple-mobile-web-app-title" content=3D"Code Detector">
+	<meta name=3D"application-name" content=3D"Code Detector">
+	<meta name=3D"theme-color" content=3D"#ffffff">
+
+	<meta property=3D"og:title" content=3D"Code Detector &amp; Formatter">
+	<meta property=3D"og:type" content=3D"website">
+	<meta property=3D"og:locale" content=3D"en_US">
+	<meta property=3D"og:url" content=3D"https://creativetechguy.com/utilities=
+/codedetector">
+	<meta property=3D"og:description" content=3D"Automatically detect a progra=
+mming language by pasting a snippet of code.">
+	<meta property=3D"og:image" content=3D"https://creativetechguy.com/images/=
+logo.png">
+
+	<meta name=3D"twitter:card" content=3D"summary">
+	<meta name=3D"twitter:site" content=3D"@JasonONeillCTG">
+	<meta name=3D"twitter:title" content=3D"Code Detector &amp; Formatter">
+	<meta name=3D"twitter:description" content=3D"Automatically detect a progr=
+amming language by pasting a snippet of code.">
+	<meta name=3D"twitter:image" content=3D"https://creativetechguy.com/images=
+/logo.png">
+
+	<link rel=3D"stylesheet" href=3D"https://creativetechguy.com/global/css/ga=
+mes.css?v=3D1555270978969" type=3D"text/css">
+	<link rel=3D"stylesheet" href=3D"https://creativetechguy.com/utilities/cod=
+edetector/styles/vs2015.css?v=3D1552844680374">
+=09
+</head>
+<body>
+=09
+=09
+	<pre><code id=3D"highlightCode" style=3D"overflow: auto;" class=3D"hljs"><=
+span class=3D"hljs-comment">#dbgBeginSrc [info script]</span>
+<span class=3D"hljs-keyword">global</span> atmelProtocol protocol retryPoss=
+ible
+<span class=3D"hljs-keyword">global</span> select_node prog_start prog_data=
+ display_data write_command read_command ciError dongle
+<span class=3D"hljs-keyword">set</span> atmelProtocol(ci_select_node) <span=
+ class=3D"hljs-number">0</span>
+<span class=3D"hljs-keyword">set</span> atmelProtocol(ci_prog_start) <span =
+class=3D"hljs-number">1</span>
+<span class=3D"hljs-keyword">set</span> atmelProtocol(ci_prog_data) <span c=
+lass=3D"hljs-number">2</span>
+<span class=3D"hljs-keyword">set</span> atmelProtocol(ci_display_data) <spa=
+n class=3D"hljs-number">3</span>
+<span class=3D"hljs-keyword">set</span> atmelProtocol(ci_write_command) <sp=
+an class=3D"hljs-number">4</span>
+<span class=3D"hljs-keyword">set</span> atmelProtocol(ci_read_command) <spa=
+n class=3D"hljs-number">5</span>
+<span class=3D"hljs-keyword">set</span> atmelProtocol(ci_error) <span class=
+=3D"hljs-number">6</span>
+<span class=3D"hljs-keyword">set</span> atmelProtocol(dongle) FFFF
+<span class=3D"hljs-keyword">set</span> select_node [<span class=3D"hljs-ke=
+yword">format</span> %<span class=3D"hljs-number">04</span>X [<span class=
+=3D"hljs-keyword">expr</span> $atmelProtocol(ci_select_node) - <span class=
+=3D"hljs-number">0</span>x$::deviceArray(crisConnect)0]]
+<span class=3D"hljs-keyword">set</span> prog_start [<span class=3D"hljs-key=
+word">format</span> %<span class=3D"hljs-number">04</span>X [<span class=3D=
+"hljs-keyword">expr</span> $atmelProtocol(ci_prog_start) - <span class=3D"h=
+ljs-number">0</span>x$::deviceArray(crisConnect)0]]
+<span class=3D"hljs-keyword">set</span> prog_data [<span class=3D"hljs-keyw=
+ord">format</span> %<span class=3D"hljs-number">04</span>X [<span class=3D"=
+hljs-keyword">expr</span> $atmelProtocol(ci_prog_data) - <span class=3D"hlj=
+s-number">0</span>x$::deviceArray(crisConnect)0]]
+<span class=3D"hljs-keyword">set</span> display_data [<span class=3D"hljs-k=
+eyword">format</span> %<span class=3D"hljs-number">04</span>X [<span class=
+=3D"hljs-keyword">expr</span> $atmelProtocol(ci_display_data) - <span class=
+=3D"hljs-number">0</span>x$::deviceArray(crisConnect)0]]
+<span class=3D"hljs-keyword">set</span> write_command [<span class=3D"hljs-=
+keyword">format</span> %<span class=3D"hljs-number">04</span>X [<span class=
+=3D"hljs-keyword">expr</span> $atmelProtocol(ci_write_command) - <span clas=
+s=3D"hljs-number">0</span>x$::deviceArray(crisConnect)0]]
+<span class=3D"hljs-keyword">set</span> read_command [<span class=3D"hljs-k=
+eyword">format</span> %<span class=3D"hljs-number">04</span>X [<span class=
+=3D"hljs-keyword">expr</span> $atmelProtocol(ci_read_command) - <span class=
+=3D"hljs-number">0</span>x$::deviceArray(crisConnect)0]]
+<span class=3D"hljs-keyword">set</span> ciError [<span class=3D"hljs-keywor=
+d">format</span> %<span class=3D"hljs-number">04</span>X [<span class=3D"hl=
+js-keyword">expr</span> $atmelProtocol(ci_error) - <span class=3D"hljs-numb=
+er">0</span>x$::deviceArray(crisConnect)0]]
+<span class=3D"hljs-keyword">set</span> dongle [<span class=3D"hljs-keyword=
+">format</span> %<span class=3D"hljs-number">04</span>X <span class=3D"hljs=
+-number">0</span>x$atmelProtocol(dongle)]
+<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs-n=
+umber">1</span>
+<span class=3D"hljs-keyword">if</span> {! [<span class=3D"hljs-keyword">inf=
+o</span> exists protocol(frameLengthW)]} then {
+    <span class=3D"hljs-keyword">set</span> protocol(frameLengthW) <span cl=
+ass=3D"hljs-number">128</span>
+    <span class=3D"hljs-keyword">set</span> protocol(frameLengthR) <span cl=
+ass=3D"hljs-number">128</span>
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclIni=
+tComm</span> {} {
+    <span class=3D"hljs-keyword">global</span> canBaud flipStates
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">set</span> status [ptclInitRs232Comm]
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> CRIS [<span class=3D"hljs-keyword"=
+>format</span> %<span class=3D"hljs-number">08</span>X <span class=3D"hljs-=
+number">0</span>x$::deviceArray(crisConnect)]
+	<span class=3D"hljs-keyword">set</span> bitrate [<span class=3D"hljs-keywo=
+rd">format</span> %<span class=3D"hljs-number">04</span>X [<span class=3D"h=
+ljs-keyword">string</span> range $canBaud <span class=3D"hljs-number">0</sp=
+an> end<span class=3D"hljs-number">-1</span>]]
+	<span class=3D"hljs-keyword">set</span> protocol <span class=3D"hljs-strin=
+g">"00"</span>
+	<span class=3D"hljs-keyword">set</span> status [ptclInitDongle $bitrate $p=
+rotocol $CRIS]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	ptclCancelRs232Comm
+	<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number"=
+>0</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclIni=
+tRs232Comm</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> flipStates port baud baudLis=
+t prot waitTime extraTimeOut loadConfig projDir
+    log_message <span class=3D"hljs-string">"Selected protocol : $prot Rs23=
+2"</span>
+    log_message <span class=3D"hljs-string">"Initializing Rs232 communicati=
+on..."</span>
+    <span class=3D"hljs-keyword">set</span> sync <span class=3D"hljs-number=
+">0</span>
+<span class=3D"hljs-comment">    #dbgShowVar "port =3D $port"</span>
+<span class=3D"hljs-comment">    #dbgShowVar "baud =3D $baud"</span>
+    <span class=3D"hljs-keyword">if</span> {![<span class=3D"hljs-keyword">=
+info</span> exists ::sio::devId]} then {
+	<span class=3D"hljs-keyword">set</span> ::sio::devId [::sio::openDevice $p=
+ort $baud async n <span class=3D"hljs-number">8</span> <span class=3D"hljs-=
+number">1</span> <span class=3D"hljs-number">0</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$::sio::devId !=3D <span class=
+=3D"hljs-number">0</span>} then {
+	<span class=3D"hljs-keyword">set</span> loadConfig(globals) <span class=3D=
+"hljs-string">"global port baud"</span>
+	<span class=3D"hljs-keyword">set</span> loadConfig(port) <span class=3D"hl=
+js-string">"set port $port"</span>
+	<span class=3D"hljs-keyword">set</span> loadConfig(baud) <span class=3D"hl=
+js-string">"set baud $baud"</span>
+	<span class=3D"hljs-keyword">set</span> loadConfig(initComm) <span class=
+=3D"hljs-string">"connectRS232 Standard"</span>
+	::sio::setBaud $baud
+	<span class=3D"hljs-keyword">set</span> sync [::sio::autoBaudSync <span cl=
+ass=3D"hljs-string">"U"</span> $waitTime(standard)]
+	<span class=3D"hljs-keyword">if</span> {$sync =3D=3D <span class=3D"hljs-n=
+umber">1</span>} then {
+	    updateGUI onRs232CommunicationOn
+	    log_message <span class=3D"hljs-string">"Rs232 communication initializ=
+ed."</span>
+	    log_message <span class=3D"hljs-string">"Dongle Initialization"</span>
+	} elseif {$sync =3D=3D <span class=3D"hljs-number">-1</span>} {
+	    updateGUI onRs232CommunicationOff
+	    <span class=3D"hljs-keyword">set</span> message <span class=3D"hljs-st=
+ring">"The board reply is not correct."</span>
+	    messageBox <span class=3D"hljs-string">"RS232 Communication"</span> <s=
+pan class=3D"hljs-keyword">error</span> $message
+	    log_message <span class=3D"hljs-string">"RS232 Communication Error."</=
+span>
+	} else {
+	    <span class=3D"hljs-keyword">set</span> message <span class=3D"hljs-st=
+ring">"Time out error."</span>
+	    messageBox <span class=3D"hljs-string">"RS232 Communication"</span> <s=
+pan class=3D"hljs-keyword">error</span> $message
+	    log_message <span class=3D"hljs-string">"RS232 Communication time out.=
+"</span>
+	    updateGUI onRs232CommunicationOn
+	    updateGUI onAnyCommunicationOff
+	}
+    } else {
+	<span class=3D"hljs-keyword">catch</span> [<span class=3D"hljs-keyword">un=
+set</span> ::sio::devId]
+	updateGUI onRs232CommunicationOff
+	updateGUI onAnyCommunicationOff
+	<span class=3D"hljs-keyword">set</span> sync <span class=3D"hljs-number">-=
+3</span>
+	<span class=3D"hljs-keyword">set</span> message <span class=3D"hljs-string=
+">"The RS232 port could not be opened."</span>
+	messageBox <span class=3D"hljs-string">"RS232 Communication"</span> <span =
+class=3D"hljs-keyword">error</span> $message
+	log_message <span class=3D"hljs-string">"RS232 Communication could not be =
+opened."</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $sync
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclCan=
+celRs232Comm</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> flipStates
+    <span class=3D"hljs-keyword">if</span> {[<span class=3D"hljs-keyword">i=
+nfo</span> exists ::sio::devId]} then {
+	::sio::closeDevice
+	updateGUI onRs232CommunicationOff
+	updateGUI onAnyCommunicationOff
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span>
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> verifyC=
+hecksum</span> {frame} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">set</span> sum <span class=3D"hljs-number"=
+>0x00</span>
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt; [<span class=3D"=
+hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> lengt=
+h $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs-key=
+word">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">set</span> byte [<span class=3D"hljs-keyword"=
+>string</span> range $frame $i [<span class=3D"hljs-keyword">expr</span> $i=
+ + <span class=3D"hljs-number">1</span>]]
+	<span class=3D"hljs-keyword">set</span> sum [<span class=3D"hljs-keyword">=
+format</span> <span class=3D"hljs-string">"%#04X"</span> [<span class=3D"hl=
+js-keyword">expr</span> $sum + <span class=3D"hljs-number">0</span>x$byte]]
+    }
+    <span class=3D"hljs-keyword">set</span> cs [<span class=3D"hljs-keyword=
+">format</span> %<span class=3D"hljs-number">02</span>X [<span class=3D"hlj=
+s-keyword">expr</span> [<span class=3D"hljs-keyword">format</span> <span cl=
+ass=3D"hljs-string">"%#04X"</span> [<span class=3D"hljs-keyword">expr</span=
+> ~$sum + <span class=3D"hljs-number">0x01</span>]] &amp; <span class=3D"hl=
+js-number">0xFF</span>]]
+    <span class=3D"hljs-keyword">set</span> frameCRC [<span class=3D"hljs-k=
+eyword">string</span> range $frame end<span class=3D"hljs-number">-1</span>=
+ end]
+    <span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-key=
+word">string</span> equal $cs $frameCRC]
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclSen=
+dFrame</span> {frame} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime
+    <span class=3D"hljs-keyword">set</span> ::sio::sioVars(AbortTx) <span c=
+lass=3D"hljs-number">0</span>
+    ::sio::clearRxBuffer
+    startTimeOutCounter $waitTime(standard)
+    <span class=3D"hljs-keyword">puts</span> $::sio::devId $frame
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $frame
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclGet=
+Ack</span> {t frame} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> extraTimeOut errCode readfra=
+me sendframe retryPossible dongle ciError
+    startExtraTimeOutCounter $t
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> errCode <span class=3D"hljs-num=
+ber">0</span>
+    <span class=3D"hljs-keyword">set</span> sendframe $frame
+    <span class=3D"hljs-keyword">while</span> {[<span class=3D"hljs-keyword=
+">string</span> first <span class=3D"hljs-string">"\n"</span> $::sio::sioVa=
+rs(RxBuffer)] =3D=3D <span class=3D"hljs-number">-1</span>} {
+	<span class=3D"hljs-keyword">if</span> {$extraTimeOut =3D=3D <span class=
+=3D"hljs-number">-1</span>} then {
+	    <span class=3D"hljs-keyword">set</span> message <span class=3D"hljs-st=
+ring">"Time Out Error."</span>
+	    cmdsResetProgressBar
+	    <span class=3D"hljs-keyword">set</span> errCode <span class=3D"hljs-nu=
+mber">-10</span>
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">update</span>
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	stopExtraTimeOutCounter
+	<span class=3D"hljs-keyword">set</span> beginIndex [<span class=3D"hljs-ke=
+yword">string</span> first <span class=3D"hljs-string">":"</span> $::sio::s=
+ioVars(RxBuffer)]
+	<span class=3D"hljs-keyword">set</span> endIndex [<span class=3D"hljs-keyw=
+ord">string</span> first <span class=3D"hljs-string">"\n"</span> $::sio::si=
+oVars(RxBuffer)]
+	<span class=3D"hljs-keyword">set</span> id [<span class=3D"hljs-keyword">s=
+tring</span> range $frame <span class=3D"hljs-number">3</span> <span class=
+=3D"hljs-number">6</span>]
+	<span class=3D"hljs-keyword">set</span> speByte [<span class=3D"hljs-keywo=
+rd">string</span> range $frame <span class=3D"hljs-number">7</span> <span c=
+lass=3D"hljs-number">8</span>]
+	<span class=3D"hljs-keyword">set</span> readframe [<span class=3D"hljs-key=
+word">string</span> range $::sio::sioVars(RxBuffer) $beginIndex [<span clas=
+s=3D"hljs-keyword">expr</span> $endIndex-<span class=3D"hljs-number">1</spa=
+n>]]
+	<span class=3D"hljs-keyword">set</span> ::sio::sioVars(RxBuffer) [<span cl=
+ass=3D"hljs-keyword">string</span> replace $::sio::sioVars(RxBuffer) $begin=
+Index $beginIndex <span class=3D"hljs-string">"!"</span>]
+	<span class=3D"hljs-keyword">set</span> ::sio::sioVars(RxBuffer) [<span cl=
+ass=3D"hljs-keyword">string</span> replace $::sio::sioVars(RxBuffer) $endIn=
+dex $endIndex <span class=3D"hljs-string">"!"</span>]
+	<span class=3D"hljs-keyword">set</span> readId [<span class=3D"hljs-keywor=
+d">string</span> range $readframe <span class=3D"hljs-number">3</span> <spa=
+n class=3D"hljs-number">6</span>]
+	<span class=3D"hljs-keyword">set</span> readspeByte [<span class=3D"hljs-k=
+eyword">string</span> range $readframe <span class=3D"hljs-number">7</span>=
+ <span class=3D"hljs-number">8</span>]
+	<span class=3D"hljs-keyword">if</span> {[verifyChecksum $readframe] =3D=3D=
+ <span class=3D"hljs-number">1</span>} then {
+	    <span class=3D"hljs-keyword">if</span> {($readId =3D=3D $id) &amp;&amp=
+;($readspeByte =3D=3D $speByte)} then {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">1</span>
+	    } elseif {$readId =3D=3D $ciError} {
+		<span class=3D"hljs-keyword">set</span> message <span class=3D"hljs-strin=
+g">"Software Security Bit set.\n  Cannot access device data."</span>
+		<span class=3D"hljs-keyword">set</span> errCode <span class=3D"hljs-numbe=
+r">-12</span>
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    } elseif {$readId =3D=3D $dongle} {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">-2</span>
+<span class=3D"hljs-comment">		#dbgShowInfo "getack -2 $retryPossible"</spa=
+n>
+		<span class=3D"hljs-keyword">if</span> {$retryPossible =3D=3D <span class=
+=3D"hljs-number">0</span>} then {
+		    <span class=3D"hljs-keyword">set</span> message <span class=3D"hljs-s=
+tring">"Check sum error."</span>
+		    <span class=3D"hljs-keyword">set</span> errCode <span class=3D"hljs-n=
+umber">-15</span>
+		}
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">-1</span>
+<span class=3D"hljs-comment">	    #dbgShowInfo "getack -1 $retryPossible"</=
+span>
+	    <span class=3D"hljs-keyword">if</span> {$retryPossible =3D=3D <span cl=
+ass=3D"hljs-number">0</span>} then {
+		<span class=3D"hljs-keyword">set</span> message <span class=3D"hljs-strin=
+g">"Check sum error."</span>
+		<span class=3D"hljs-keyword">set</span> errCode <span class=3D"hljs-numbe=
+r">-15</span>
+	    }
+	}
+    }
+    <span class=3D"hljs-keyword">if</span> {[<span class=3D"hljs-keyword">i=
+nfo</span> exists message]} then {
+	messageBox <span class=3D"hljs-string">"Communication Information"</span> =
+<span class=3D"hljs-keyword">error</span> $message
+	cmdsResetProgressBar
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclUpd=
+ateOrCompareBuffer</span> {addr6digit action} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> readframe
+    <span class=3D"hljs-keyword">set</span> addr <span class=3D"hljs-number=
+">1</span>
+    <span class=3D"hljs-keyword">set</span> len <span class=3D"hljs-number"=
+>0</span>x[<span class=3D"hljs-keyword">string</span> range $readframe <spa=
+n class=3D"hljs-number">1</span> <span class=3D"hljs-number">2</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">0</span>; <span class=3D"hljs-keywo=
+rd">set</span> j <span class=3D"hljs-number">9</span>} {$i &lt; $len} {<spa=
+n class=3D"hljs-keyword">incr</span> i; <span class=3D"hljs-keyword">incr</=
+span> j <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">if</span> {$action =3D=3D <span class=3D"hljs=
+-string">"update"</span>} then {
+	    writeBuffer [<span class=3D"hljs-keyword">format</span> <span class=3D=
+"hljs-string">"%06X"</span> [<span class=3D"hljs-keyword">expr</span> $addr=
+6digit + $i]] [<span class=3D"hljs-keyword">string</span> range $readframe =
+$j [<span class=3D"hljs-keyword">expr</span> $j + <span class=3D"hljs-numbe=
+r">1</span>]]
+	} else {
+	    <span class=3D"hljs-keyword">set</span> addr <span class=3D"hljs-numbe=
+r">-1</span>
+	    <span class=3D"hljs-keyword">if</span> {[readBuffer [<span class=3D"hl=
+js-keyword">format</span> <span class=3D"hljs-string">"%06X"</span> [<span =
+class=3D"hljs-keyword">expr</span> $addr6digit + $i]]] !=3D [<span class=3D=
+"hljs-keyword">string</span> range $readframe $j [<span class=3D"hljs-keywo=
+rd">expr</span> $j + <span class=3D"hljs-number">1</span>]]} then {
+		<span class=3D"hljs-keyword">set</span> addr [<span class=3D"hljs-keyword=
+">format</span> <span class=3D"hljs-string">"%#06X"</span> [<span class=3D"=
+hljs-keyword">expr</span> $addr6digit + $i]]
+		<span class=3D"hljs-keyword">set</span> message <span class=3D"hljs-strin=
+g">"Memory Verify Fail at: $addr"</span>
+		log_message $message
+		actionsLog_message <span class=3D"hljs-string">"Memory Verify Fail at: $a=
+ddr"</span>
+		cmdsResetProgressBar
+<span class=3D"hljs-comment">		#dbgShowInfo "Verify FAIL."</span>
+		<span class=3D"hljs-keyword">break</span>
+	    }
+	}
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $addr
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclSel=
+ectNode</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> flipStates atmelProtocol wai=
+tTime readframe
+    <span class=3D"hljs-keyword">global</span> retryPossible dongle sendfra=
+me select_node canBaud
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> CRIS [<span class=3D"hljs-keywo=
+rd">format</span> %<span class=3D"hljs-number">08</span>X <span class=3D"hl=
+js-number">0</span>x$::deviceArray(crisConnect)]
+    <span class=3D"hljs-keyword">set</span> bitrate [<span class=3D"hljs-ke=
+yword">format</span> %<span class=3D"hljs-number">04</span>X [<span class=
+=3D"hljs-keyword">string</span> range $canBaud <span class=3D"hljs-number">=
+0</span> end<span class=3D"hljs-number">-1</span>]]
+    <span class=3D"hljs-keyword">set</span> protocol <span class=3D"hljs-st=
+ring">"00"</span>
+    ptclInitDongle $bitrate $protocol $CRIS
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":01"</span> $select_n=
+ode <span class=3D"hljs-string">"00"</span> $::deviceArray(nnbConnect)]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+<span class=3D"hljs-comment">    #dbgShowInfo "FRAME  &gt; $frame"</span>
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray(bootlId) [<span clas=
+s=3D"hljs-keyword">string</span> range $readframe <span class=3D"hljs-numbe=
+r">9</span> <span class=3D"hljs-number">10</span>]
+	<span class=3D"hljs-keyword">set</span> atmelProtocol(commState) [<span cl=
+ass=3D"hljs-keyword">string</span> range $readframe <span class=3D"hljs-num=
+ber">11</span> <span class=3D"hljs-number">12</span>]
+	<span class=3D"hljs-keyword">if</span> {$atmelProtocol(commState) =3D=3D <=
+span class=3D"hljs-string">"01"</span>} then {
+	    <span class=3D"hljs-keyword">if</span> {[winfo exists .main.f_buffer.b=
+_memSelect]} then {
+		pack .main.f_buffer.b_memSelect -side bottom -expand <span class=3D"hljs-=
+number">0</span> -pady <span class=3D"hljs-number">17</span>
+	    }
+	    ptclReadBootlVer
+	    updateGUI onAnyCommunicationOn
+	    updateGUI onCanNodeSelectionOpened
+	    log_message <span class=3D"hljs-string">"CAN node $::deviceArray(nnbCo=
+nnect) opened."</span>
+	} else {
+	    <span class=3D"hljs-keyword">if</span> {[winfo exists .main.f_buffer.b=
+_memSelect]} then {
+		pack forget .main.f_buffer.b_memSelect
+	    }
+	    updateGUI onAnyCommunicationOff
+	    updateGUI onCanNodeSelectionClosed
+	    log_message <span class=3D"hljs-string">"CAN node $::deviceArray(nnbCo=
+nnect) closed."</span>
+	}
+    } else {
+	<span class=3D"hljs-keyword">set</span> flipStates(anyComm) <span class=3D=
+"hljs-string">"off"</span>
+	updateGUI onAnyCommunicationOff
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclSen=
+dIdProgStart</span> {addLo addHi {<span class=3D"hljs-keyword">memory</span=
+> <span class=3D"hljs-string">"00"</span>}} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> buffer waitTime canProtocol =
+prog_start retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":05"</span> $prog_sta=
+rt <span class=3D"hljs-string">"00"</span> $memory [<span class=3D"hljs-key=
+word">format</span> %<span class=3D"hljs-number">04</span>X <span class=3D"=
+hljs-number">0</span>x$addLo] [<span class=3D"hljs-keyword">format</span> %=
+<span class=3D"hljs-number">04</span>X <span class=3D"hljs-number">0</span>=
+x$addHi]]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+<span class=3D"hljs-comment">    #dbgShowInfo "FRAME  &gt; $frame"</span>
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclPro=
+gramData</span> {addLo addHi dummyArg} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime temp prog_data read=
+frame retryPossible dongle sendframe
+<span class=3D"hljs-comment">    #dbgShowVar "addLo  &gt; $addLo"</span>
+<span class=3D"hljs-comment">    #dbgShowVar "addHi  &gt; $addHi"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> len [<span class=3D"hljs-keywor=
+d">format</span> <span class=3D"hljs-string">"%02X"</span> [<span class=3D"=
+hljs-keyword">expr</span> $addHi - $addLo + <span class=3D"hljs-number">1</=
+span>]]
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":"</span> $len $prog_=
+data <span class=3D"hljs-string">"00"</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i $addLo} {$i &lt;=3D $addHi} {<span class=3D"hljs-keyword">incr<=
+/span> i} {
+	<span class=3D"hljs-keyword">set</span> frame ${frame}[readBuffer [<span c=
+lass=3D"hljs-keyword">format</span> <span class=3D"hljs-string">"%06X"</spa=
+n> $i]]
+    }
+<span class=3D"hljs-comment">    #dbgShowVar "frame =3D $frame"</span>
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+<span class=3D"hljs-comment">    #dbgShowInfo "FRAME  &gt; $frame"</span>
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {[<span class=3D"hljs-keyword">stri=
+ng</span> index $readframe end<span class=3D"hljs-number">-2</span>] =3D=3D=
+ <span class=3D"hljs-number">0</span>} then {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">1</span>
+	} elseif {[<span class=3D"hljs-keyword">string</span> index $readframe end=
+<span class=3D"hljs-number">-2</span>] =3D=3D <span class=3D"hljs-number">1=
+</span>} {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	} elseif {[<span class=3D"hljs-keyword">string</span> index $readframe end=
+<span class=3D"hljs-number">-2</span>] =3D=3D <span class=3D"hljs-number">2=
+</span>} {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">2</span>
+	}
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dBlock</span> {addrLo addrHi {<span class=3D"hljs-keyword">memory</span> <s=
+pan class=3D"hljs-string">"00"</span>} {action <span class=3D"hljs-string">=
+"update"</span>}} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime display_data retrya=
+ddrLo protocol readframe retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> nbFrame [<span class=3D"hljs-ke=
+yword">expr</span> (($addrHi - $addrLo) / $protocol(frameLengthR)) +<span c=
+lass=3D"hljs-number">1</span>]
+<span class=3D"hljs-comment">    #dbgShowVar "nbFrame $nbFrame"</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":05"</span> $display_=
+data <span class=3D"hljs-string">"00"</span> $memory [<span class=3D"hljs-k=
+eyword">format</span> %<span class=3D"hljs-number">04</span>X $addrLo] [<sp=
+an class=3D"hljs-keyword">format</span> %<span class=3D"hljs-number">04</sp=
+an>X $addrHi]]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">while</span> {$nbFrame !=3D<span class=3D"=
+hljs-number">0</span>} {
+	<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stand=
+ard) $frame]
+	<span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"hljs=
+-number">1</span>} then {
+	    <span class=3D"hljs-keyword">set</span> failAddr [ptclUpdateOrCompareB=
+uffer [<span class=3D"hljs-keyword">format</span> <span class=3D"hljs-strin=
+g">"%#06X"</span> $addrLo] $action]
+	    <span class=3D"hljs-keyword">if</span> {($failAddr =3D=3D <span class=
+=3D"hljs-number">1</span>) ||($failAddr =3D=3D <span class=3D"hljs-number">=
+-1</span>)} then {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">1</span>
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+		<span class=3D"hljs-keyword">break</span>
+	    }
+<span class=3D"hljs-comment">	    #Frame is correctly read so we can read t=
+he following one</span>
+	    <span class=3D"hljs-keyword">incr</span> nbFrame <span class=3D"hljs-n=
+umber">-1</span>
+	    <span class=3D"hljs-keyword">set</span> addrLo [<span class=3D"hljs-ke=
+yword">expr</span> $addrLo + $protocol(frameLengthR)]
+	} elseif {$retryPossible} {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keywor=
+d">append</span> frame <span class=3D"hljs-string">":05"</span> $display_da=
+ta <span class=3D"hljs-string">"00"</span> $memory [<span class=3D"hljs-key=
+word">format</span> %<span class=3D"hljs-number">04</span>X $addrLo] [<span=
+ class=3D"hljs-keyword">format</span> %<span class=3D"hljs-number">04</span=
+>X $addrHi]]
+		<span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-keywo=
+rd">list</span>]
+		<span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">set=
+</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=3D=
+"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> leng=
+th $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs-ke=
+yword">incr</span> i <span class=3D"hljs-number">2</span>} {
+		    <span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hl=
+js-keyword">string</span> range $frame $i [<span class=3D"hljs-keyword">exp=
+r</span> $i + <span class=3D"hljs-number">1</span>]]
+		}
+		<span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> nbFrame [<span class=3D"hljs-keyw=
+ord">expr</span> (($addrHi - $addrLo) / $protocol(frameLengthR)) +<span cla=
+ss=3D"hljs-number">1</span>]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keywor=
+d">append</span> frame <span class=3D"hljs-string">":05"</span> $display_da=
+ta <span class=3D"hljs-string">"00"</span> $memory [<span class=3D"hljs-key=
+word">format</span> %<span class=3D"hljs-number">04</span>X $addrLo] [<span=
+ class=3D"hljs-keyword">format</span> %<span class=3D"hljs-number">04</span=
+>X $addrHi]]
+		<span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-keywo=
+rd">list</span>]
+		<span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">set=
+</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=3D=
+"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> leng=
+th $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs-ke=
+yword">incr</span> i <span class=3D"hljs-number">2</span>} {
+		    <span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hl=
+js-keyword">string</span> range $frame $i [<span class=3D"hljs-keyword">exp=
+r</span> $i + <span class=3D"hljs-number">1</span>]]
+		}
+		<span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> nbFrame [<span class=3D"hljs-keyw=
+ord">expr</span> (($addrHi - $addrLo) / $protocol(frameLengthR)) +<span cla=
+ss=3D"hljs-number">1</span>]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+		<span class=3D"hljs-keyword">break</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">update</span>
+    }
+    <span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-key=
+word">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclBla=
+nkCheck</span> {addrLo addrHi {<span class=3D"hljs-keyword">memory</span> <=
+span class=3D"hljs-string">"01"</span>}} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime readframe display_d=
+ata retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> waitTime(standard) <span class=
+=3D"hljs-number">10000</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":05"</span> $display_=
+data <span class=3D"hljs-string">"00"</span> $memory [<span class=3D"hljs-k=
+eyword">format</span> %<span class=3D"hljs-number">04</span>X <span class=
+=3D"hljs-string">"0x$addrLo"</span>] [<span class=3D"hljs-keyword">format</=
+span> %<span class=3D"hljs-number">04</span>X <span class=3D"hljs-string">"=
+0x$addrHi"</span>]]
+<span class=3D"hljs-comment">    #dbgShowVar "assembled frame: $frame"</spa=
+n>
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+<span class=3D"hljs-comment">    #dbgShowInfo "FRAME  &gt; $frame"</span>
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status =3D=3D <span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {[<span class=3D"hljs-keyword">stri=
+ng</span> length $readframe] =3D=3D <span class=3D"hljs-number">15</span>} =
+then {
+	    <span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-ke=
+yword">string</span> range $readframe end<span class=3D"hljs-number">-5</sp=
+an> end<span class=3D"hljs-number">-2</span>]
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">-1</span>
+	}
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">0</span>} then {
+	<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number"=
+>-2</span>
+    }
+    <span class=3D"hljs-keyword">set</span> waitTime(standard) <span class=
+=3D"hljs-number">3000</span>
+<span class=3D"hljs-comment">    #dbgShowVar "status $status"</span>
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclEra=
+seBlock0</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command sendf=
+rame retryPossible dongle
+    <span class=3D"hljs-keyword">set</span> waitTime(standard) <span class=
+=3D"hljs-number">10000</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $write_co=
+mmand <span class=3D"hljs-string">"000000"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">set</span> waitTime(standard) <span class=
+=3D"hljs-number">3000</span>
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclEra=
+seBlock1</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> waitTime(standard) <span class=
+=3D"hljs-number">10000</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $write_co=
+mmand <span class=3D"hljs-string">"000020"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">set</span> waitTime(standard) <span class=
+=3D"hljs-number">3000</span>
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclEra=
+seBlock2</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> waitTime(standard) <span class=
+=3D"hljs-number">10000</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $write_co=
+mmand <span class=3D"hljs-string">"000040"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">set</span> waitTime(standard) <span class=
+=3D"hljs-number">3000</span>
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclFul=
+lChipErase</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> waitTime(standard) <span class=
+=3D"hljs-number">10000</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $write_co=
+mmand <span class=3D"hljs-string">"0000FF"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">set</span> loadConfig(programDevice) <span=
+ class=3D"hljs-string">"setupProgramDevice"</span>
+    <span class=3D"hljs-keyword">set</span> waitTime(standard) <span class=
+=3D"hljs-number">3000</span>
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teBSB</span> {data} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"000100"</span> $data]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teSBV</span> {data} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"000101"</span> $data]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclPro=
+gSSBlev1</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"000105FE"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclPro=
+gSSBlev2</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"000105FC"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teEB</span> {data} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"000106"</span> $data]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teBTC1</span> {data} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"00011C"</span> $data]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teBTC2</span> {data} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"00011D"</span> $data]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teBTC3</span> {data} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"00011E"</span> $data]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teNNB</span> {data} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"00011F"</span> $data]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teCRIS</span> {data} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"000120"</span> $data]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+<span class=3D"hljs-comment">		#build the checksum frame: dongle is the com=
+mand identifier </span>
+<span class=3D"hljs-comment">		#of dongle and checksum  management    </spa=
+n>
+<span class=3D"hljs-comment">		#sendframe is the penultimate sent  frame </=
+span>
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teHwByte</span> {{data <span class=3D"hljs-string">"X"</span>}} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> write_command waitTime retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">if</span> {$data =3D=3D <span class=3D"hlj=
+s-string">"X"</span>} then {
+	<span class=3D"hljs-keyword">set</span> data [<span class=3D"hljs-keyword"=
+>format</span> %<span class=3D"hljs-number">02</span>X [<span class=3D"hljs=
+-keyword">expr</span> [<span class=3D"hljs-keyword">expr</span> <span class=
+=3D"hljs-number">0</span>x$::deviceArray(hsb) &amp; <span class=3D"hljs-num=
+ber">0x3F</span>] | [<span class=3D"hljs-keyword">expr</span> <span class=
+=3D"hljs-number">0</span>x$::deviceArray(x2Fuse) &lt;&lt; <span class=3D"hl=
+js-number">7</span>] | [<span class=3D"hljs-keyword">expr</span> <span clas=
+s=3D"hljs-number">0</span>x$::deviceArray(bljbFuse) &lt;&lt; <span class=3D=
+"hljs-number">6</span>]]]
+    }
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":03"</span> $write_co=
+mmand <span class=3D"hljs-string">"000200"</span> $data]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teHwReset</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $write_co=
+mmand <span class=3D"hljs-string">"000300"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclWri=
+teLJMP</span> {address} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":04"</span> $write_co=
+mmand <span class=3D"hljs-string">"000301"</span> $address]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dBootlVer</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime rs232standard read_=
+command readframe retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+bootlVer"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000000"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> c1 [<span class=3D"hljs-keyword">s=
+tring</span> index $readframe end<span class=3D"hljs-number">-3</span>]
+	<span class=3D"hljs-keyword">set</span> c2 [<span class=3D"hljs-keyword">s=
+tring</span> index $readframe end<span class=3D"hljs-number">-2</span>]
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) <span class=3D"h=
+ljs-string">"1.$c1.$c2"</span>
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)" </span>
+	setBootlVerDepFeatures <span class=3D"hljs-string">"CAN"</span> ${c1}${c2}
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dDevBootId1</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> testFlag waitTime read_comma=
+nd readframe retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+deviceBootId1"</span>
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">if</span> {$testFlag(readDevBootId1)} then=
+ {
+	<span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyword=
+">append</span> frame <span class=3D"hljs-string">":02"</span> $read_comman=
+d <span class=3D"hljs-string">"000001"</span>]
+	<span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-keywor=
+d">list</span>]
+	<span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">set<=
+/span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=3D"=
+hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> lengt=
+h $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs-key=
+word">incr</span> i <span class=3D"hljs-number">2</span>} {
+	    <span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hlj=
+s-keyword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr=
+</span> $i + <span class=3D"hljs-number">1</span>]]
+	}
+	<span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+	ptclSendFrame $frame
+	<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stand=
+ard) $frame]
+	<span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hljs-n=
+umber">1</span>} then {
+	    <span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+		<span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"hlj=
+s-number">-2</span>} then {
+		    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"=
+hljs-number">0</span>
+		    ptclSendFrame $frame
+		    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(=
+standard) $frame]
+		} elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"=
+hljs-number">0</span>
+		    <span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+		} else {
+		    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-nu=
+mber">0</span>
+		}
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	    <span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-ke=
+yword">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+	}
+	<span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"hljs=
+-number">1</span>} then {
+	    <span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=
+=3D"hljs-keyword">string</span> range $readframe end<span class=3D"hljs-num=
+ber">-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	    #dbgShowVar "::deviceArray($p) =3D $::dev=
+iceArray($p)"</span>
+	}
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dDevBootId2</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> testFlag waitTime read_comma=
+nd readframe retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+deviceBootId2"</span>
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">if</span> {$testFlag(readDevBootId2)} then=
+ {
+	<span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyword=
+">append</span> frame <span class=3D"hljs-string">":02"</span> $read_comman=
+d <span class=3D"hljs-string">"000002"</span>]
+	<span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-keywor=
+d">list</span>]
+	<span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">set<=
+/span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=3D"=
+hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> lengt=
+h $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs-key=
+word">incr</span> i <span class=3D"hljs-number">2</span>} {
+	    <span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hlj=
+s-keyword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr=
+</span> $i + <span class=3D"hljs-number">1</span>]]
+	}
+	<span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+	ptclSendFrame $frame
+	<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stand=
+ard) $frame]
+	<span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hljs-n=
+umber">1</span>} then {
+	    <span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+		<span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"hlj=
+s-number">-2</span>} then {
+		    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"=
+hljs-number">0</span>
+		    ptclSendFrame $frame
+		    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(=
+standard) $frame]
+		} elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"=
+hljs-number">0</span>
+		    <span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+		} else {
+		    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-nu=
+mber">0</span>
+		}
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	    <span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-ke=
+yword">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+	}
+	<span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"hljs=
+-number">1</span>} then {
+	    <span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=
+=3D"hljs-keyword">string</span> range $readframe end<span class=3D"hljs-num=
+ber">-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	    #dbgShowVar "::deviceArray($p) =3D $::dev=
+iceArray($p)"</span>
+	}
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dBSB</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+bsb"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000100"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dSBV</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+sbv"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000101"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dSSB</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime logFileId expAnsw r=
+ead_command readframe retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+ssb"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000105"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+	<span class=3D"hljs-keyword">set</span> ::deviceArray(level) X
+	<span class=3D"hljs-keyword">foreach</span> lev {<span class=3D"hljs-numbe=
+r">0</span> <span class=3D"hljs-number">1</span> <span class=3D"hljs-number=
+">2</span>} {
+	    <span class=3D"hljs-keyword">foreach</span> i $expAnsw(readSSBlev$lev)=
+ {
+		<span class=3D"hljs-keyword">if</span> {$::deviceArray(ssb) =3D=3D $i} th=
+en {
+		    <span class=3D"hljs-keyword">set</span> ::deviceArray(level) $lev
+		}
+	    }
+	}
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray(level) =3D $::devi=
+ceArray(level)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dEB</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+eb"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000106"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dManufId</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+manufId"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000130"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dDeviceId1</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+deviceId1"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000131"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dDeviceId2</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+deviceId2"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000160"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dDeviceId3</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+deviceId3"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000161"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dBTC1</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+btc1"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"00011C"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dBTC2</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+btc2"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"00011D"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dBTC3</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+btc3"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"00011E"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dNNB</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+nnbProg"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"00011F"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dCRIS</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime read_command readfr=
+ame retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p crisProg
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000120"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dHwByte</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> rs232standard waitTime read_=
+command readframe retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> p <span class=3D"hljs-string">"=
+hsb"</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":02"</span> $read_com=
+mand <span class=3D"hljs-string">"000200"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> ::deviceArray($p) [<span class=3D"=
+hljs-keyword">string</span> range $readframe end<span class=3D"hljs-number"=
+>-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">	#dbgShowVar "::deviceArray($p) =3D $::deviceA=
+rray($p)"</span>
+	<span class=3D"hljs-keyword">set</span> ::deviceArray(x2Fuse) [<span class=
+=3D"hljs-keyword">expr</span> (<span class=3D"hljs-number">0</span>x$::devi=
+ceArray(hsb) | <span class=3D"hljs-number">0x7F</span>) &gt;&gt; <span clas=
+s=3D"hljs-number">7</span>]
+	<span class=3D"hljs-keyword">set</span> ::deviceArray(bljbFuse) [<span cla=
+ss=3D"hljs-keyword">expr</span> ((<span class=3D"hljs-number">0</span>x$::d=
+eviceArray(hsb) | <span class=3D"hljs-number">0xBF</span>) &amp; <span clas=
+s=3D"hljs-number">0x7F</span>) &gt;&gt; <span class=3D"hljs-number">6</span=
+>]
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclSet=
+PortsConfig</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> bootloaderVerDependent
+    <span class=3D"hljs-keyword">global</span> waitTime write_command retry=
+Possible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">if</span> {$bootloaderVerDependent(p1p3p4_=
+config)} then {
+	<span class=3D"hljs-keyword">set</span> d0 <span class=3D"hljs-number">01<=
+/span>
+	<span class=3D"hljs-keyword">foreach</span> p {p1 p3 p4} d1 {<span class=
+=3D"hljs-number">02</span> <span class=3D"hljs-number">03</span> <span clas=
+s=3D"hljs-number">04</span>} {
+	    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"h=
+ljs-number">1</span>
+	    <span class=3D"hljs-keyword">set</span> frame <span class=3D"hljs-stri=
+ng">""</span>
+	    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-key=
+word">append</span> frame <span class=3D"hljs-string">":03"</span> $write_c=
+ommand <span class=3D"hljs-string">"00"</span> $d0 $d1 $::deviceArray(${p}_=
+config)]
+	    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-ke=
+yword">list</span>]
+	    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">=
+set</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+		<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-k=
+eyword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</s=
+pan> $i + <span class=3D"hljs-number">1</span>]]
+	    }
+	    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+	    ptclSendFrame $frame
+	    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(s=
+tandard) $frame]
+	    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hl=
+js-number">1</span>} then {
+		<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+		    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D=
+"hljs-number">-2</span>} then {
+			<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hlj=
+s-number">0</span>
+			ptclSendFrame $frame
+			<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(sta=
+ndard) $frame]
+		    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+			<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hlj=
+s-number">0</span>
+			<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+		    } else {
+			<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numbe=
+r">0</span>
+		    }
+		} else {
+		    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-nu=
+mber">0</span>
+		}
+		<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywo=
+rd">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+	    }
+	    <span class=3D"hljs-keyword">if</span> {! $status} then {
+		<span class=3D"hljs-keyword">break</span>
+	    }
+	}
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dPortsConfig</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> bootloaderVerDependent
+    <span class=3D"hljs-keyword">global</span> testFlag waitTime read_comma=
+nd readframe retryPossible dongle sendframe
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">if</span> {$bootloaderVerDependent(p1p3p4_=
+config)} then {
+	<span class=3D"hljs-keyword">set</span> d0 <span class=3D"hljs-number">01<=
+/span>
+	<span class=3D"hljs-keyword">foreach</span> p {p1 p3 p4} d1 {<span class=
+=3D"hljs-number">02</span> <span class=3D"hljs-number">03</span> <span clas=
+s=3D"hljs-number">04</span>} {
+	    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"h=
+ljs-number">1</span>
+	    <span class=3D"hljs-keyword">set</span> frame <span class=3D"hljs-stri=
+ng">""</span>
+	    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-key=
+word">append</span> frame <span class=3D"hljs-string">":02"</span> $read_co=
+mmand <span class=3D"hljs-string">"00"</span> $d0 $d1]
+	    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-ke=
+yword">list</span>]
+	    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">=
+set</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+		<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-k=
+eyword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</s=
+pan> $i + <span class=3D"hljs-number">1</span>]]
+	    }
+	    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+	    ptclSendFrame $frame
+	    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(s=
+tandard) $frame]
+	    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hl=
+js-number">1</span>} then {
+		<span class=3D"hljs-keyword">if</span> {$retryPossible} then {
+		    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D=
+"hljs-number">-2</span>} then {
+			<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hlj=
+s-number">0</span>
+			ptclSendFrame $frame
+			<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(sta=
+ndard) $frame]
+		    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+			<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hlj=
+s-number">0</span>
+			<span class=3D"hljs-keyword">set</span> status [ptclChecksum]
+		    } else {
+			<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numbe=
+r">0</span>
+		    }
+		} else {
+		    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-nu=
+mber">0</span>
+		}
+		<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywo=
+rd">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+	    }
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">1</span>} then {
+		<span class=3D"hljs-keyword">set</span> ::deviceArray(${p}_config) [<span=
+ class=3D"hljs-keyword">string</span> range $readframe end<span class=3D"hl=
+js-number">-3</span> end<span class=3D"hljs-number">-2</span>]
+<span class=3D"hljs-comment">		#dbgShowVar "::deviceArray(${p}_config) =3D =
+\</span>
+			$::deviceArray(${p}_config)"=09
+	    } else {
+		<span class=3D"hljs-keyword">break</span>
+	    }
+	}
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclChe=
+cksum</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime dongle sendframe
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame1 <span class=3D"hljs-string">":00"</span> $dongle =
+<span class=3D"hljs-string">"00"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $sendframe]
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRes=
+et</span> {} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime dongle
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":00"</span> $dongle <=
+span class=3D"hljs-string">"01"</span>]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclIni=
+tDongle</span> {bitrate protocol CRIS} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime readframe dongle se=
+ndframe retryPossible
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hl=
+js-number">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":07"</span> $dongle <=
+span class=3D"hljs-string">"02"</span> $bitrate $protocol $CRIS]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    <span class=3D"hljs-keyword">append</span> frame [checkSum $lFrame]
+    ptclSendFrame $frame
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+<span class=3D"hljs-comment">    #dbgShowInfo "status $status"   </span>
+    <span class=3D"hljs-keyword">if</span> {$status !=3D <span class=3D"hlj=
+s-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {$retryPossible=3D=3D<span class=3D=
+"hljs-number">1</span>} then {
+	    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"=
+hljs-number">-2</span>} then {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		ptclSendFrame $frame
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $frame]
+	    } elseif {$status =3D=3D <span class=3D"hljs-number">-1</span>} {
+		<span class=3D"hljs-keyword">set</span> retryPossible <span class=3D"hljs=
+-number">0</span>
+		<span class=3D"hljs-keyword">set</span> frame1 [<span class=3D"hljs-keywo=
+rd">append</span> frame1 <span class=3D"hljs-string">":00"</span> $dongle <=
+span class=3D"hljs-string">"0002"</span>]
+		ptclSendFrame $frame1
+		<span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(stan=
+dard) $sendframe]
+	    } else {
+		<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number=
+">0</span>
+	    }
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">expr</span> $status=3D=3D<span class=3D"hljs-number">1</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">set</span> status [<span class=3D"hljs-keywor=
+d">string</span> range $readframe end<span class=3D"hljs-number">-2</span> =
+end<span class=3D"hljs-number">-2</span>]
+    }
+    <span class=3D"hljs-keyword">if</span> {$status=3D=3D<span class=3D"hlj=
+s-number">1</span>} then {
+	log_message <span class=3D"hljs-string">"Dongle initialized"</span>
+	log_message <span class=3D"hljs-string">"File &gt; Load..."</span>
+    } else {
+	log_message <span class=3D"hljs-string">"Dongle Initialization Failed"</sp=
+an>
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclSta=
+rtBootloader</span> {num_chip} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">global</span> waitTime dongle
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">set</span> frame [<span class=3D"hljs-keyw=
+ord">append</span> frame <span class=3D"hljs-string">":01"</span> $dongle <=
+span class=3D"hljs-string">"03"</span> $num_chip]
+    <span class=3D"hljs-keyword">set</span> lFrame [<span class=3D"hljs-key=
+word">list</span>]
+    <span class=3D"hljs-keyword">for</span> {<span class=3D"hljs-keyword">s=
+et</span> i <span class=3D"hljs-number">1</span>} {$i &lt;=3D [<span class=
+=3D"hljs-keyword">expr</span> [<span class=3D"hljs-keyword">string</span> l=
+ength $frame] - <span class=3D"hljs-number">2</span>]} {<span class=3D"hljs=
+-keyword">incr</span> i <span class=3D"hljs-number">2</span>} {
+	<span class=3D"hljs-keyword">lappend</span> lFrame [<span class=3D"hljs-ke=
+yword">string</span> range $frame $i [<span class=3D"hljs-keyword">expr</sp=
+an> $i + <span class=3D"hljs-number">1</span>]]
+    }
+    ptclSendFrame [<span class=3D"hljs-keyword">append</span> frame [checkS=
+um $lFrame]]
+    <span class=3D"hljs-keyword">set</span> status [ptclGetAck $waitTime(st=
+andard) $frame]
+    <span class=3D"hljs-keyword">if</span> {$status =3D=3D <span class=3D"h=
+ljs-number">1</span>} then {
+	<span class=3D"hljs-keyword">if</span> {[<span class=3D"hljs-keyword">stri=
+ng</span> range $readframe <span class=3D"hljs-number">9</span> <span class=
+=3D"hljs-number">10</span>] =3D=3D $num_chip} then {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">1</span>
+	} else {
+	    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-num=
+ber">0</span>
+	}
+    }
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclChe=
+ckCanEntries</span> {} {
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">1</span>
+    <span class=3D"hljs-keyword">if</span> {! [isValidHexaInput $::deviceAr=
+ray(nnbProg)]} then {
+	<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number"=
+>0</span>
+    }
+    <span class=3D"hljs-keyword">if</span> {! [isValidHexaInput $::deviceAr=
+ray(crisProg)]} then {
+	<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number"=
+>0</span>
+    }
+    <span class=3D"hljs-keyword">if</span> {! [isValidHexaInput $::deviceAr=
+ray(btc1)]} then {
+	<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number"=
+>0</span>
+    }
+    <span class=3D"hljs-keyword">if</span> {! [isValidHexaInput $::deviceAr=
+ray(btc2)]} then {
+	<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number"=
+>0</span>
+    }
+    <span class=3D"hljs-keyword">if</span> {! [isValidHexaInput $::deviceAr=
+ray(btc3)]} then {
+	<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number"=
+>0</span>
+    }
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclRea=
+dCanConfig</span> {} {
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">0</span>
+    <span class=3D"hljs-keyword">while</span> {<span class=3D"hljs-number">=
+1</span>} {
+	<span class=3D"hljs-keyword">if</span> {! [ptclReadNNB]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">if</span> {! [ptclReadCRIS]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">if</span> {! [ptclReadBTC1]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">if</span> {! [ptclReadBTC2]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">if</span> {! [ptclReadBTC3]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number"=
+>1</span>
+	<span class=3D"hljs-keyword">break</span>
+    }
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclSet=
+CanConfig</span> {} {
+    <span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-numb=
+er">0</span>
+    <span class=3D"hljs-keyword">while</span> {<span class=3D"hljs-number">=
+1</span>} {
+	<span class=3D"hljs-keyword">if</span> {! [ptclCheckCanEntries]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">if</span> {! [ptclWriteNNB $::deviceArray(nnb=
+Prog)]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">if</span> {! [ptclWriteCRIS $::deviceArray(cr=
+isProg)]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">if</span> {! [ptclWriteBTC1 $::deviceArray(bt=
+c1)]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">if</span> {! [ptclWriteBTC2 $::deviceArray(bt=
+c2)]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">if</span> {! [ptclWriteBTC3 $::deviceArray(bt=
+c3)]} then {
+	    <span class=3D"hljs-keyword">break</span>
+	}
+	<span class=3D"hljs-keyword">set</span> status <span class=3D"hljs-number"=
+>1</span>
+	<span class=3D"hljs-keyword">break</span>
+    }
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-keyword">proc</span><span class=3D"hljs-title"> ptclSta=
+rtAppli</span> {reset_button} {
+<span class=3D"hljs-comment">    #dbgBeginProc [info level [info level]]</s=
+pan>
+    <span class=3D"hljs-keyword">if</span> {$reset_button} then {
+	<span class=3D"hljs-keyword">set</span> status [ptclWriteHwReset]
+    } else {
+	<span class=3D"hljs-keyword">set</span> status [ptclWriteLJMP <span class=
+=3D"hljs-number">0000</span>]
+    }
+    updateGUI onAnyCommunicationOff
+    updateGUI onCanNodeSelectionClosed
+<span class=3D"hljs-comment">    #dbgEndProc [info level [info level]]</spa=
+n>
+    <span class=3D"hljs-keyword">return</span> $status
+}
+<span class=3D"hljs-comment">#dbgEndSrc [info script]</span></code></pre>
+=09
+=09
+=09
+
+=09
+=09
+=09
+
+</body></html>
+------MultipartBoundary--mohUbYVUZKbRl5HfOYtD1cBXLG8QzBbuzjxRhJQqaV----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-3c3bba5a-fbfe-478b-837a-1e8196451d38@mhtml.blink
+
+@charset "utf-8";
+
+table, tbody, tr, th, td { border: 1px solid black; border-collapse: collap=
+se; }
+
+th { border-bottom: 2px solid black; }
+
+td, th { padding-left: 5px; padding-right: 5px; }
+
+.center, .center * { text-align: center; margin-left: auto; margin-right: a=
+uto; }
+------MultipartBoundary--mohUbYVUZKbRl5HfOYtD1cBXLG8QzBbuzjxRhJQqaV----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://creativetechguy.com/global/css/games.css?v=1555270978969
+
+@charset "windows-1252";
+
+.error-popup-container { background: rgb(153, 153, 153); width: 600px; max-=
+width: 85vw; left: 50%; top: 50%; transform: translate(-50%, -50%); text-al=
+ign: center; font-size: 25px; position: fixed; box-shadow: rgb(153, 153, 15=
+3) 0px 0px 100px; border-radius: 60px; border: 1px solid black; z-index: 21=
+47483646; }
+
+.error-popup-message { color: rgb(105, 0, 0); font-weight: bold; padding: 2=
+0px; }
+
+.more-games-logo { position: absolute; margin: 8px; z-index: 100000000; lef=
+t: 0px; top: 0px; }
+------MultipartBoundary--mohUbYVUZKbRl5HfOYtD1cBXLG8QzBbuzjxRhJQqaV----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://creativetechguy.com/utilities/codedetector/styles/vs2015.css?v=1552844680374
+
+@charset "windows-1252";
+
+.hljs { display: block; overflow-x: auto; padding: 0.5em; background: rgb(3=
+0, 30, 30); color: rgb(220, 220, 220); }
+
+.hljs-keyword, .hljs-literal, .hljs-symbol, .hljs-name { color: rgb(86, 156=
+, 214); }
+
+.hljs-link { color: rgb(86, 156, 214); text-decoration: underline; }
+
+.hljs-built_in, .hljs-type { color: rgb(78, 201, 176); }
+
+.hljs-number, .hljs-class { color: rgb(184, 215, 163); }
+
+.hljs-string, .hljs-meta-string { color: rgb(214, 157, 133); }
+
+.hljs-regexp, .hljs-template-tag { color: rgb(154, 83, 52); }
+
+.hljs-subst, .hljs-function, .hljs-title, .hljs-params, .hljs-formula { col=
+or: rgb(220, 220, 220); }
+
+.hljs-comment, .hljs-quote { color: rgb(87, 166, 74); font-style: italic; }
+
+.hljs-doctag { color: rgb(96, 139, 78); }
+
+.hljs-meta, .hljs-meta-keyword, .hljs-tag { color: rgb(155, 155, 155); }
+
+.hljs-variable, .hljs-template-variable { color: rgb(189, 99, 197); }
+
+.hljs-attr, .hljs-attribute, .hljs-builtin-name { color: rgb(156, 220, 254)=
+; }
+
+.hljs-section { color: gold; }
+
+.hljs-emphasis { font-style: italic; }
+
+.hljs-strong { font-weight: bold; }
+
+.hljs-bullet, .hljs-selector-tag, .hljs-selector-id, .hljs-selector-class, =
+.hljs-selector-attr, .hljs-selector-pseudo { color: rgb(215, 186, 125); }
+
+.hljs-addition { background-color: rgb(20, 66, 18); display: inline-block; =
+width: 100%; }
+
+.hljs-deletion { background-color: rgb(102, 0, 0); display: inline-block; w=
+idth: 100%; }
+------MultipartBoundary--mohUbYVUZKbRl5HfOYtD1cBXLG8QzBbuzjxRhJQqaV------
